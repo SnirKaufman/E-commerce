@@ -1,0 +1,18 @@
+$primary-color: #1e1e1e;
+$secondary-color: #9f9f9f;
+$green-color: #00281c;
+$secondGreen-color: #2e4d45;
+$desktop-screen: 1200px;
+$laptop-screen: 1024px;
+$tablet-screen: 768px;
+$mobile-screen: 480px;
+
+@mixin btn() {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem;
+  cursor: pointer;
+}

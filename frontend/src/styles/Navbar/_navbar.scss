@@ -1,0 +1,54 @@
+@use "../global/" as *;
+
+.navbar_container {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    cursor: pointer;
+  }
+}
+
+.cart_icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-btn {
+  @include btn();
+  font-weight: bold;
+  padding: 0.5rem;
+  .link {
+    color: black;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .navbar_container {
+    font-size: 0.8rem;
+    ul {
+      display: none;
+    }
+    .login-btn {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  .navbar_container {
+    padding: 1rem 0.2rem;
+  }
+}
